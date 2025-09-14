@@ -85,6 +85,8 @@ public class Main {
             if (currentFriday <= daysInMonth) {
 
                 System.out.println("Сегодня пятница, " + currentFriday + "-е число. Необходимо подготовить отчет.");
+            }
+        }
                 System.out.println("Задача8");
                 int currentYear = 2025;
                 int yearComet = 0;
@@ -92,6 +94,8 @@ public class Main {
                     yearComet = yearComet + 79;
                     if (yearComet >= (currentYear - 200) && yearComet <= (currentYear + 100)) {
                         System.out.println(yearComet + " Год кометы ");
+                    }
+                }
 
                         System.out.println("Задача6");
                         int depositAmount3 = 15000;
@@ -105,7 +109,8 @@ public class Main {
                             total3 = total3 + (total3 / 100 * 7);
                             if (i % 6 == 0) {
                                 System.out.println("Месяц " + i + " накоплено " + total3 + " рублей");
-
+                            }
+                        }
                                 System.out.println("Задача5");
                                 int currentAmount = 15_000;
                                 int depositFinals = 12_000_000;
@@ -116,4 +121,4 @@ public class Main {
                                     monthss += 6;
                                     System.out.println("Месяц " + monthss + ", сумма накоплений равна " + currentAmount + " рублей");
 
-                                }}}}}}}}}
+                                }}}
