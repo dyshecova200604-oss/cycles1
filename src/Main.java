@@ -58,7 +58,7 @@ public class Main {
 
         System.out.println();
 
-        System.out.println("Задача4");
+        System.out.println("Задача 4");
         double initiaAmount = 15000; // Начальная сумма вклада
         double targeAmount = 12000000; // Целевая сумма
         double monthlInterestRate = 0.07; // Процентная ставка (7%)
