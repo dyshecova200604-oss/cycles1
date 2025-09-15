@@ -58,7 +58,7 @@ public class Main {
 
         System.out.println();
 
-        System.out.println("Задача4");
+        System.out.println("Задача 4");
         double initiaAmount = 15000; // Начальная сумма вклада
         double targeAmount = 12000000; // Целевая сумма
         double monthlInterestRate = 0.07; // Процентная ставка (7%)
@@ -80,40 +80,47 @@ public class Main {
         System.out.println("Задача7");
         int firstFriday = 5;
         int daysInMonth = 31;
-        for (int l = 0; l < 5; l ++) {
+        for (int l = 0; l < 5; l++) {
             int currentFriday = firstFriday + (l * 7);
             if (currentFriday <= daysInMonth) {
 
                 System.out.println("Сегодня пятница, " + currentFriday + "-е число. Необходимо подготовить отчет.");
-                System.out.println("Задача8");
-                int currentYear = 2025;
-                int yearComet = 0;
-                while (yearComet <=currentYear) {
-                    yearComet = yearComet + 79;
-                    if (yearComet >= (currentYear - 200) && yearComet <= (currentYear + 100)) {
-                        System.out.println(yearComet + " Год кометы ");
+            }
+        }
+        System.out.println("Задача8");
+        int currentYear = 2025;
+        int yearComet = 0;
+        while (yearComet <= currentYear) {
+            yearComet = yearComet + 79;
+            if (yearComet >= (currentYear - 200) && yearComet <= (currentYear + 100)) {
+                System.out.println(yearComet + " Год кометы ");
+            }
+        }
 
-                        System.out.println("Задача6");
-                        int depositAmount3 = 15000;
-                        int total3 = 0;
-                        int i1 = 1;
-                        int periogYear = 9;
-                        int periodOnMounth = periogYear * 12;
+        System.out.println("Задача6");
+        int depositAmount3 = 15000;
+        int total3 = 0;
+        int i1 = 1;
+        int periogYear = 9;
+        int periodOnMounth = periogYear * 12;
 
-                        for (; i <= periodOnMounth; i++) {
-                            total3 = total3 + depositAmount3;
-                            total3 = total3 + (total3 / 100 * 7);
-                            if (i % 6 == 0) {
-                                System.out.println("Месяц " + i + " накоплено " + total3 + " рублей");
+        for (; i <= periodOnMounth; i++) {
+            total3 = total3 + depositAmount3;
+            total3 = total3 + (total3 / 100 * 7);
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " накоплено " + total3 + " рублей");
+            }
+        }
+        System.out.println("Задача5");
+        int currentAmount = 15_000;
+        int depositFinals = 12_000_000;
+        double capitals = 0.07;
+        int monthss = 0;
+        while (currentAmount < depositFinals) {
+            currentAmount += currentAmount * capitals;
+            monthss += 6;
+            System.out.println("Месяц " + monthss + ", сумма накоплений равна " + currentAmount + " рублей");
 
-                                System.out.println("Задача5");
-                                int currentAmount = 15_000;
-                                int depositFinals = 12_000_000;
-                                double capitals = 0.07;
-                                int monthss = 0;
-                                while (currentAmount < depositFinals) {
-                                    currentAmount += currentAmount * capitals;
-                                    monthss += 6;
-                                    System.out.println("Месяц " + monthss + ", сумма накоплений равна " + currentAmount + " рублей");
-
-                                }}}}}}}}}
+        }
+    }
+}
